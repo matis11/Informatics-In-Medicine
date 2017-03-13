@@ -6,12 +6,10 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
-/**
- * Created by Piotr on 2017-03-10.
- */
-public class img {
+public class Image {
     private BufferedImage image = null;
-    public img(String path) {
+
+    public Image(String path) {
         try {
             this.image = ImageIO.read(new File(path));
         } catch (IOException e) {
